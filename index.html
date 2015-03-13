@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+  <div ng-controller="resultCtrl">
+    <label>PS1</label>
+    <input type="text" ng-model="ps1" ng-chang="calculate()" placeholder="Enter your marks">
+    <br>
+    <label>PS2</label>
+    <input type="text" ng-model="ps2" ng-chang="calculate()" placeholder="Enter your marks">
+    <br>
+    <label>PS3</label>
+    <input type="text" ng-model="ps3" ng-chang="calculate()" placeholder="Enter your marks">
+    <br>
+    <label>PS4</label>
+    <input type="text" ng-model="ps4" ng-chang="calculate()" placeholder="Enter your marks">
+    <br>
+    <label>PS5</label>
+    <input type="text" ng-model="ps5" ng-chang="calculate()" placeholder="Enter your marks">
+    <br>
+    You obtained: {{finalGrade().toFixed(2)}}% out of 50% of final grade.
+  </div>
+</body>
+</html>
