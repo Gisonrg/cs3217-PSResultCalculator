@@ -5,6 +5,6 @@ angular.module('app',[])
 
   $scope.finalGrade = function() {
     console.log($scope.finalGrade);
-    return (parseFloat($scope.ps1) / 103.0 * 0.05 + parseFloat($scope.ps2) / 200.0 * 0.1 + parseFloat($scope.ps3) / 220.0 * 0.3 + parseFloat($scope.ps4) / 100.0 * 0.3 + parseFloat($scope.ps5) / 200.0 * 0.25) * 0.5; 
+    return ((parseFloat($scope.ps1) / 100.0 * 0.05 + parseFloat($scope.ps2) / 200.0 * 0.1 + parseFloat($scope.ps3) / 220.0 * 0.3 + parseFloat($scope.ps4) / 100.0 * 0.3 + parseFloat($scope.ps5) / 200.0 * 0.25) * 0.5) * 100; 
   }
 });
